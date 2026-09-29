@@ -71,7 +71,7 @@ filebrowser config set -a 0.0.0.0 -p "$PORT" -r "$DATA_DIR" -l "$LOG_FILE" -d "$
 
 # 6. 添加默认管理员账户 (admin/admin)
 echo -e "${GREEN}>>> 配置默认管理员账户...${RESET}"
-filebrowser users add admin admin --perm.admin -d "$DB_FILE" >/dev/null
+filebrowser users add admin admin12345678 --perm.admin -d "$DB_FILE" >/dev/null
 
 # 7. 配置 Systemd 守护进程
 echo -e "${GREEN}>>> 配置 Systemd 开机自启服务...${RESET}"
