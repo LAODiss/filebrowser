@@ -35,7 +35,7 @@ case $ARCH in
 esac
 
 # 3. 通过国内加速节点下载官方二进制包
-# 这里使用 ghproxy.cn 作为加速前缀，如果你有其他偏好的镜像源，可直接修改下方变量
+# 这里使用 gh-proxy.org 作为加速前缀，如果你有其他偏好的镜像源，可直接修改下方变量
 GH_PROXY="https://v4.gh-proxy.org/" 
 DOWNLOAD_URL="${GH_PROXY}https://github.com/filebrowser/filebrowser/releases/latest/download/linux-${FB_ARCH}-filebrowser.tar.gz"
 
@@ -105,7 +105,7 @@ echo -e "${GREEN}  FileBrowser 加速版安装完毕并已在后台稳定运行�
 echo -e "${YELLOW}======================================================${RESET}"
 echo -e "访问地址:     ${GREEN}http://$IP:$PORT${RESET}"
 echo -e "默认账号:     ${GREEN}admin${RESET}"
-echo -e "默认密码:     ${GREEN}admin${RESET}"
+echo -e "默认密码:     ${GREEN}admin12345678${RESET}"
 echo -e "网盘根目录:   ${GREEN}$DATA_DIR${RESET}"
 echo -e "配置文件路径: ${GREEN}$DB_FILE${RESET}"
 echo -e "${YELLOW}======================================================${RESET}"
